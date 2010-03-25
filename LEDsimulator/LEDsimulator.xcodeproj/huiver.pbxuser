@@ -29,7 +29,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					993,
+					1051,
 					20,
 					48,
 					43,
@@ -53,7 +53,7 @@
 					16,
 					200,
 					50,
-					933,
+					1413,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXSymbolsDataSource_SymbolTypeIconID,
@@ -91,7 +91,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					13,
+					1442,
 					60,
 					20,
 					48,
@@ -108,17 +108,17 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 290180413;
-			PBXWorkspaceStateSaveDate = 290180413;
+			PBXPerProjectTemplateStateSaveDate = 291072178;
+			PBXWorkspaceStateSaveDate = 291072178;
 		};
 		perUserProjectItems = {
+			4D08A85311580C2C008F84C4 /* PBXTextBookmark */ = 4D08A85311580C2C008F84C4 /* PBXTextBookmark */;
+			4D08A85411580C2C008F84C4 /* PBXTextBookmark */ = 4D08A85411580C2C008F84C4 /* PBXTextBookmark */;
+			4D08A85511580C2C008F84C4 /* PBXTextBookmark */ = 4D08A85511580C2C008F84C4 /* PBXTextBookmark */;
+			4D5F5F511159656F000F3848 /* PBXTextBookmark */ = 4D5F5F511159656F000F3848 /* PBXTextBookmark */;
 			4D693A3B1073D2BC00FC79BD /* PBXTextBookmark */ = 4D693A3B1073D2BC00FC79BD /* PBXTextBookmark */;
 			4D693B481073F64B00FC79BD /* PBXTextBookmark */ = 4D693B481073F64B00FC79BD /* PBXTextBookmark */;
-			4D6DC763109F66B7006341CC /* PBXTextBookmark */ = 4D6DC763109F66B7006341CC /* PBXTextBookmark */;
-			4D7A05C3114CE02E00B5967B /* PBXTextBookmark */ = 4D7A05C3114CE02E00B5967B /* PBXTextBookmark */;
-			4DBF1CEB10ADFD1000179FC5 /* PBXTextBookmark */ = 4DBF1CEB10ADFD1000179FC5 /* PBXTextBookmark */;
-			4DF7F2FA1096425300491D98 /* PBXTextBookmark */ = 4DF7F2FA1096425300491D98 /* PBXTextBookmark */;
-			4DF7F3221096488D00491D98 /* PBXTextBookmark */ = 4DF7F3221096488D00491D98 /* PBXTextBookmark */;
+			4DB2CAD21159FAF900D04290 /* PBXTextBookmark */ = 4DB2CAD21159FAF900D04290 /* PBXTextBookmark */;
 			4DFE10791070A01C00493CEF /* PBXTextBookmark */ = 4DFE10791070A01C00493CEF /* PBXTextBookmark */;
 			4DFE107A1070A01C00493CEF /* PBXTextBookmark */ = 4DFE107A1070A01C00493CEF /* PBXTextBookmark */;
 			4DFE107B1070A01C00493CEF /* PBXTextBookmark */ = 4DFE107B1070A01C00493CEF /* PBXTextBookmark */;
@@ -140,6 +140,46 @@
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 155}";
 		};
+	};
+	4D08A85311580C2C008F84C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4DF7F2BA109626BA00491D98 /* StripeView.h */;
+		name = "StripeView.h: 16";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 327;
+		vrLoc = 0;
+	};
+	4D08A85411580C2C008F84C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4DF7F2BB109626BA00491D98 /* StripeView.m */;
+		name = "StripeView.m: 39";
+		rLen = 10;
+		rLoc = 843;
+		rType = 0;
+		vrLen = 1177;
+		vrLoc = 0;
+	};
+	4D08A85511580C2C008F84C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4DFE1074106FE86500493CEF /* LEDsimulator.h */;
+		name = "LEDsimulator.h: 21";
+		rLen = 0;
+		rLoc = 471;
+		rType = 0;
+		vrLen = 1214;
+		vrLoc = 0;
+	};
+	4D5F5F511159656F000F3848 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
+		name = "LEDsimulator.m: 133";
+		rLen = 0;
+		rLoc = 4396;
+		rType = 0;
+		vrLen = 1662;
+		vrLoc = 0;
 	};
 	4D693A3B1073D2BC00FC79BD /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -174,26 +214,6 @@
 		name = ONHost.h;
 		path = /Users/Shared/huiver/InstalledProducts/OmniNetworking.framework/Versions/A/Headers/ONHost.h;
 		sourceTree = "<absolute>";
-	};
-	4D6DC763109F66B7006341CC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DF7F2BA109626BA00491D98 /* StripeView.h */;
-		name = "StripeView.h: 16";
-		rLen = 0;
-		rLoc = 240;
-		rType = 0;
-		vrLen = 327;
-		vrLoc = 0;
-	};
-	4D7A05C3114CE02E00B5967B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 140";
-		rLen = 0;
-		rLoc = 4609;
-		rType = 0;
-		vrLen = 1478;
-		vrLoc = 1555;
 	};
 	4D9B94EB1072A5A600EEAF1A /* LEDsimulator.m:51 */ = {
 		isa = PBXFileBreakpoint;
@@ -248,49 +268,29 @@
 		originalNumberOfMultipleMatches = 0;
 		state = 0;
 	};
-	4DBF1CEB10ADFD1000179FC5 /* PBXTextBookmark */ = {
+	4DB2CAD21159FAF900D04290 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 140";
-		rLen = 0;
-		rLoc = 4609;
+		name = "LEDsimulator.m: 37";
+		rLen = 564;
+		rLoc = 1050;
 		rType = 0;
-		vrLen = 1302;
-		vrLoc = 3824;
+		vrLen = 1622;
+		vrLoc = 755;
 	};
 	4DF7F2BA109626BA00491D98 /* StripeView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 573}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1595, 886}}";
 			sepNavSelRange = "{240, 0}";
 			sepNavVisRange = "{0, 327}";
 		};
 	};
 	4DF7F2BB109626BA00491D98 /* StripeView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 728}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1595, 886}}";
 			sepNavSelRange = "{843, 10}";
-			sepNavVisRange = "{0, 986}";
+			sepNavVisRange = "{0, 1177}";
 		};
-	};
-	4DF7F2FA1096425300491D98 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1074106FE86500493CEF /* LEDsimulator.h */;
-		name = "LEDsimulator.h: 16";
-		rLen = 14;
-		rLoc = 344;
-		rType = 0;
-		vrLen = 1175;
-		vrLoc = 39;
-	};
-	4DF7F3221096488D00491D98 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DF7F2BB109626BA00491D98 /* StripeView.m */;
-		name = "StripeView.m: 39";
-		rLen = 10;
-		rLoc = 843;
-		rType = 0;
-		vrLen = 986;
-		vrLoc = 0;
 	};
 	4DFE103B106E933200493CEF /* LEDsimulator */ = {
 		isa = PBXExecutable;
@@ -356,16 +356,16 @@
 	};
 	4DFE1074106FE86500493CEF /* LEDsimulator.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 658}}";
-			sepNavSelRange = "{344, 14}";
-			sepNavVisRange = "{39, 1175}";
+			sepNavIntBoundsRect = "{{0, 0}, {1595, 886}}";
+			sepNavSelRange = "{471, 0}";
+			sepNavVisRange = "{0, 1214}";
 		};
 	};
 	4DFE1075106FE86500493CEF /* LEDsimulator.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1349, 2197}}";
-			sepNavSelRange = "{4609, 0}";
-			sepNavVisRange = "{1555, 1478}";
+			sepNavSelRange = "{1050, 564}";
+			sepNavVisRange = "{755, 1622}";
 		};
 	};
 	4DFE10791070A01C00493CEF /* PBXTextBookmark */ = {

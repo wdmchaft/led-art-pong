@@ -3,15 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		4D693A591073DA4C00FC79BD /* OmniNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D693A581073DA4C00FC79BD /* OmniNetworking.framework */; };
-		4D693AEE1073ED4500FC79BD /* OmniNetworking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D693A581073DA4C00FC79BD /* OmniNetworking.framework */; };
-		4D693AF51073EDA600FC79BD /* OmniBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D693AF41073EDA600FC79BD /* OmniBase.framework */; };
-		4D693AF91073EDB000FC79BD /* OmniBase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D693AF41073EDA600FC79BD /* OmniBase.framework */; };
+		4D5F5F3411596219000F3848 /* OmniBase in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5F5F3311596219000F3848 /* OmniBase */; };
+		4D5F5F3611596227000F3848 /* OmniNetworking in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5F5F3511596227000F3848 /* OmniNetworking */; };
+		4D5F5F371159622D000F3848 /* OmniBase in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F5F3311596219000F3848 /* OmniBase */; };
+		4D5F5F381159622D000F3848 /* OmniNetworking in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F5F3511596227000F3848 /* OmniNetworking */; };
+		4D5F5F3911596237000F3848 /* OmniBase in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D5F5F3311596219000F3848 /* OmniBase */; };
+		4D5F5F3A11596237000F3848 /* OmniNetworking in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D5F5F3511596227000F3848 /* OmniNetworking */; };
 		4DF7F2BC109626BA00491D98 /* LEDsimulator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF7F2B9109626BA00491D98 /* LEDsimulator.xib */; };
 		4DF7F2BD109626BA00491D98 /* StripeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF7F2BB109626BA00491D98 /* StripeView.m */; };
 		4DFE1076106FE86500493CEF /* LEDsimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */; };
@@ -27,8 +29,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4D693AF91073EDB000FC79BD /* OmniBase.framework in CopyFiles */,
-				4D693AEE1073ED4500FC79BD /* OmniNetworking.framework in CopyFiles */,
+				4D5F5F3911596237000F3848 /* OmniBase in CopyFiles */,
+				4D5F5F3A11596237000F3848 /* OmniNetworking in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,8 +45,8 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* LEDsimulator_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDsimulator_Prefix.pch; sourceTree = "<group>"; };
-		4D693A581073DA4C00FC79BD /* OmniNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmniNetworking.framework; path = ../../../Shared/huiver/InstalledProducts/OmniNetworking.framework; sourceTree = SOURCE_ROOT; };
-		4D693AF41073EDA600FC79BD /* OmniBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmniBase.framework; path = ../../../Shared/huiver/InstalledProducts/OmniBase.framework; sourceTree = SOURCE_ROOT; };
+		4D5F5F3311596219000F3848 /* OmniBase */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = OmniBase; path = /Users/Shared/huiver/InstalledProducts/OmniBase.framework/OmniBase; sourceTree = "<absolute>"; };
+		4D5F5F3511596227000F3848 /* OmniNetworking */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = OmniNetworking; path = /Users/Shared/huiver/InstalledProducts/OmniNetworking.framework/OmniNetworking; sourceTree = "<absolute>"; };
 		4DF7F2B9109626BA00491D98 /* LEDsimulator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LEDsimulator.xib; sourceTree = "<group>"; };
 		4DF7F2BA109626BA00491D98 /* StripeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeView.h; sourceTree = "<group>"; };
 		4DF7F2BB109626BA00491D98 /* StripeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeView.m; sourceTree = "<group>"; };
@@ -60,8 +62,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				4D693A591073DA4C00FC79BD /* OmniNetworking.framework in Frameworks */,
-				4D693AF51073EDA600FC79BD /* OmniBase.framework in Frameworks */,
+				4D5F5F3411596219000F3848 /* OmniBase in Frameworks */,
+				4D5F5F3611596227000F3848 /* OmniNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +84,9 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D693AF41073EDA600FC79BD /* OmniBase.framework */,
-				4D693A581073DA4C00FC79BD /* OmniNetworking.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				4D5F5F3311596219000F3848 /* OmniBase */,
+				4D5F5F3511596227000F3848 /* OmniNetworking */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -176,7 +178,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LEDsimulator" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* LEDsimulator */;
 			projectDirPath = "";
@@ -205,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5F5F371159622D000F3848 /* OmniBase in Sources */,
+				4D5F5F381159622D000F3848 /* OmniNetworking in Sources */,
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				4DFE1076106FE86500493CEF /* LEDsimulator.m in Sources */,
 				4DF7F2BD109626BA00491D98 /* StripeView.m in Sources */,
@@ -250,6 +254,14 @@
 				GCC_PREFIX_HEADER = LEDsimulator_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+					"\"$(SRCROOT)/../../../../Shared/huiver/InstalledProducts/OmniBase.framework/Versions/A\"",
+					"\"$(SRCROOT)/../../../../Shared/huiver/InstalledProducts/OmniNetworking.framework/Versions/A\"",
+					"\"$(SRCROOT)/../../../../Shared/huiver/InstalledProducts/OmniBase.framework\"",
+					"\"$(SRCROOT)/../../../../Shared/huiver/InstalledProducts/OmniNetworking.framework\"",
+				);
 				PRODUCT_NAME = LEDsimulator;
 			};
 			name = Debug;
@@ -268,6 +280,14 @@
 				GCC_PREFIX_HEADER = LEDsimulator_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+					"\"$(SRCROOT)/../../../../Shared/huiver/InstalledProducts/OmniBase.framework/Versions/A\"",
+					"\"$(SRCROOT)/../../../../Shared/huiver/InstalledProducts/OmniNetworking.framework/Versions/A\"",
+					"\"$(SRCROOT)/../../../../Shared/huiver/InstalledProducts/OmniBase.framework\"",
+					"\"$(SRCROOT)/../../../../Shared/huiver/InstalledProducts/OmniNetworking.framework\"",
+				);
 				PRODUCT_NAME = LEDsimulator;
 			};
 			name = Release;
@@ -282,7 +302,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
 			};
 			name = Debug;
 		};
@@ -290,11 +309,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/huiver/OmniGroup/Frameworks/;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

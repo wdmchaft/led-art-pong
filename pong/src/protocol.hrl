@@ -16,5 +16,7 @@
 
 -define(TX_BUTTONSTATE,40).
 
+-define(PLAY_SOUND,100).
+
 -endif.
 

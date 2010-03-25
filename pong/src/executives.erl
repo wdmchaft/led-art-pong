@@ -17,7 +17,7 @@
 
 %% --------------------------------------------------------------------
 %% External exports
--export([start_link/1, execute/1, test/1, demo/0, player_to_player/4, lost/1]).
+-export([start_link/1, execute/1, test/1, demo/0, player_to_player/4, lost/1, play_sound/1]).
 
 %% gen_server callbacks
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
@@ -46,7 +46,16 @@ execute(Executive) ->
 % Move ball from Player1 to Player2
 player_to_player(Player1, Player2, TimeSpan, CallAfterwards) ->
 	gen_server:call(?MODULE, {player_to_player, Player1, Player2, TimeSpan, CallAfterwards}).
-	
+
+%% @doc Play a predefined sound, specify sound by number.
+%% 
+%% @spec play_sound(SoundId::integer()) -> void 
+
+-spec(play_sound(list()) -> void).
+
+play_sound(SoundId) ->
+	gen_server:call(?MODULE, {play_sound, SoundId}).
+
 %% ====================================================================
 %% Server functions
 %% ====================================================================
@@ -80,10 +89,15 @@ handle_call({execute, Executive}, _From, State) ->
 	NewState = execute(State, Executive),
 	{reply, ok, NewState};
 
+handle_call({play_sound, SoundId}, _From, State) ->
+	play_sound(SoundId, State),
+	{reply, ok, State};
+
+
 handle_call({player_to_player, Player1, Player2, TimeSpan, CallAfterwards}, _From, State) ->
 	player_to_player(State, Player1, Player2, TimeSpan, CallAfterwards),
 	{reply, ok, State};
-		
+	
 handle_call(Message, From, State) ->
 	io:format("~p ignoring handle_call(~p, ~p, ~p)~n", [?MODULE, Message, From, State]),
 	{reply, ok, State}.
@@ -169,6 +183,10 @@ demo_loop(Pixel, MinPixel, MaxPixel, Next) ->
 % Start a background tune with mplayer, return Port
 background_tune(File) ->
 	_Port = open_port({spawn, "/usr/bin/afplay ./resources/button-29.mp3"}, []).
+
+%% @doc Play sound by id.
+play_sound(SoundId, #state{mplayer = MPlayer} = State) ->
+	_Port = open_port({spawn_executable, MPlayer}, [{args, [?MEDIA_BUTTON_PRESSED]}]).
 
 %% Ping pong
 % Move ball from player P1 to player P2

@@ -64,8 +64,14 @@ init([]) ->
 			10000,
 			worker,
 			[led_server]},
+	MediaServer = {tag5,
+			{media_server, start_link, [[5001, {"127.0.0.1", 55555}]]},
+			permanent,
+			10000,
+			worker,
+			[media_server]},
 	Protocol = {tag2,
-			{protocol_server, start_link, [[{"10.0.0.1", 3000, void, <<>>}, {"127.0.0.1", 55555, void, <<>>}]]},
+			{protocol_server, start_link, [[{"10.0.0.1", 3000, void, <<>>}, {"127.0.0.1", 5001, void, <<>>}]]},
 			permanent,
 			10000,
 			worker,
@@ -82,7 +88,7 @@ init([]) ->
 			10000,
 			worker,
 			[game_server]},
-    {ok,{{one_for_one,0,1}, [LEDserver, Game, Protocol, Executives]}}.
+    {ok,{{one_for_one,0,1}, [MediaServer, Game, Protocol, Executives]}}.
 
 %% ====================================================================
 %% Internal functions

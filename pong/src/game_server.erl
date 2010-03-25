@@ -64,7 +64,7 @@ demo() ->
 move_ball(Parameters) ->
 	gen_server:call(?MODULE, {set_pixel, Parameters}).
 
-%% @doc Move the ball from one side to the other.
+%% @doc Light the entire row of LEDs.
 %% 
 %% @spec set_row(tuple()) -> void 
 

@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <OmniNetworking/ONHost.h>
-#import <OmniNetworking/ONTCPSocket.h>
-#import <OmniNetworking/ONSocketStream.h>
+#import "OmniNetworking/ONHost.h"
+#import "OmniNetworking/ONTCPSocket.h"
+#import "OmniNetworking/ONSocketStream.h"
 #include "StripeView.h"
 
 #define PORT_NUMBER 55555

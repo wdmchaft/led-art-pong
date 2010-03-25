@@ -151,9 +151,9 @@
 }
 - (void)buttonPressed:(int)button {
 	NSLog(@"Button %d pressed.", button);
-	unsigned char bytes[5] = {0xff, 0x28, (unsigned char)button, 150, 0x00};
-	bytes[4] = [self checksum:bytes nr_of_bytes:4];
-	NSMutableData *clientData = [[NSMutableData alloc] initWithBytes:bytes length:5];
+	unsigned char bytes[7] = {0xff, 0x28, (unsigned char)button, 150, 0x00, 0x00, 0x00};
+	bytes[6] = [self checksum:bytes nr_of_bytes:6];
+	NSMutableData *clientData = [[NSMutableData alloc] initWithBytes:bytes length:7];
 	[stream writeData:clientData];
 	[clientData release];
 }
