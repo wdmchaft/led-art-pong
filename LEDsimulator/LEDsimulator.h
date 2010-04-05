@@ -7,12 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "OmniNetworking/ONHost.h"
-#import "OmniNetworking/ONTCPSocket.h"
-#import "OmniNetworking/ONSocketStream.h"
+#include "AsyncSocket.h"
 #include "StripeView.h"
 
 #define PORT_NUMBER 55555
+#define PROTOCOL_MSG_SIZE 7
+#define READ_TIMEOUT -1
+#define BUTTON_PRESSED_TAG 1
+
 #define NUMBER_OF_LEDS 32
 #define LEDBACKGROUNDCOLOR (169.0/255.0)
 
@@ -26,21 +28,24 @@
 	IBOutlet NSTextField *status;
 	IBOutlet NSBox *box;
 	IBOutlet NSTextFieldCell *serverInfo;
-	ONTCPSocket *serverSocket;
-	ONSocketStream *stream;
+
+	
+	AsyncSocket *listenSocket;
+	NSMutableArray *connectedSockets;
+	
+	BOOL isRunning;
 	NSThread *server;
 }
 
 @property (assign) NSTextField *status;
 @property (assign) NSTextFieldCell *serverInfo;
-@property (assign) ONTCPSocket *serverSocket;
 
-- (void)process_connection:(ONTCPSocket *)connectionSocket;
 - (void)process_commands:(NSData *)command;
 - (void)setStripe:(NSUInteger)stripe withColor:(NSColor *)color;
 - (IBAction)buttonOnePressed:(id)sender;
 - (IBAction)buttonTwoPressed:(id)sender;
-- (void)updateSocketStatus:(ONTCPSocket *)socket;
+- (void)updateSocketStatus:(AsyncSocket *)socket;
+- (void)updateSocketStatusWithHost:(NSString *)host AndPort:(UInt16)port;
 - (void)buttonPressed:(int)button;
 
 @end

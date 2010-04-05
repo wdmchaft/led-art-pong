@@ -135,6 +135,10 @@ handle_info({tcp, LS_Socket, Bin}, #state{led_server = {_, _, LS_Socket}, socket
 % The connection was lost, set Socket to void.
 handle_info({tcp_closed, Socket}, #state{socket = Socket} = State) ->
 	{noreply, State#state{socket = void, input = <<>>}};
+	
+% The connection was lost, set Socket to void.
+handle_info({tcp_closed, LS_Socket}, #state{led_server = {Host, Port, LS_Socket}} = State) ->
+	{noreply, State#state{led_server = {Host, Port, void}}};
 
 handle_info(_Info, State) ->
     {noreply, State}.

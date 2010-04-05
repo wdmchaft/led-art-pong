@@ -13,7 +13,19 @@
 
 @synthesize status;
 @synthesize serverInfo;
-@synthesize serverSocket;
+
+
+- (id)init
+{
+	NSLog(@"LEDsimulator init starting\n");
+	if((self = [super init]))
+	{
+		listenSocket = [[AsyncSocket alloc] initWithDelegate:self];
+		connectedSockets = [[NSMutableArray alloc] initWithCapacity:1];
+	}
+	NSLog(@"LEDsimulator init done\n");
+	return self;
+}
 
 - (void) awakeFromNib {
 	NSLog(@"LEDsimulator awakeFromNib starting\n");
@@ -26,64 +38,74 @@
 		[stripeView release];
 	}
 
-	server = [[NSThread alloc] initWithTarget:self selector:@selector(omni_server) object:nil];
-	[server setName:@"Network server"];
-	[server start];
 	NSLog(@"LEDsimulator awakeFromNib done\n");
 }
 
-- (void) omni_server {
-	NSLog(@"LEDsimulator (omni)server starting\n");
-	unsigned short serverPort = PORT_NUMBER; 
-	NSAutoreleasePool *mainPool; 
-	mainPool = [[NSAutoreleasePool alloc] init]; 
-	serverSocket = [ONTCPSocket tcpSocket];
-	[serverSocket startListeningOnLocalPort: serverPort allowingAddressReuse:YES];
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+	NSLog(@"Ready");
+	
+	// Advanced options - enable the socket to continue operations even during modal dialogs, and menu browsing
+	[listenSocket setRunLoopModes:[NSArray arrayWithObject:NSRunLoopCommonModes]];
+	
+	
+	NSError *error = nil;
+	if(![listenSocket acceptOnPort:PORT_NUMBER error:&error])
+	{
+		NSLog(@"Error starting server: %@", error);
+		return;
+	}
+	
+	NSLog(@"Echo server started on port %hu", [listenSocket localPort]);
+	
 	[self updateSocketStatus:nil];
-	do { 
-		ONTCPSocket *connectionSocket;
-		NSAutoreleasePool *loopPool; 
-		loopPool = [[NSAutoreleasePool alloc] init]; 
-		connectionSocket = [serverSocket acceptConnectionOnNewSocket];
-		[self process_connection:connectionSocket];
-		[loopPool release]; 
-	} while (1); 
-	[mainPool release];
-	NSLog(@"LEDsimulator (omni)server done\n");
+	
 }
 
-- (void) process_connection:(ONTCPSocket *)connectionSocket { 
-	stream = [ONSocketStream streamWithSocket:connectionSocket];
-	// Update display with name of client. 
-	ONHost *remote = [connectionSocket remoteAddressHost];
-	NSLog(@"Connected to client %@\n", [remote hostname]);
-	[self updateSocketStatus:connectionSocket];
-	@try {
-		while ([connectionSocket isConnected]) {
-			NSAutoreleasePool *loopPool; 
-			loopPool = [[NSAutoreleasePool alloc] init]; 
-			NSMutableData *clientData = [[NSMutableData alloc] initWithLength:0];
-			[clientData appendData:[stream readDataOfLength:7]];
-			[self process_commands:clientData];
-			[clientData release];
-			[loopPool release]; 
-		}
-	}
-	@catch (NSException *exception) {
-		NSLog(@"Exception %@:%@", [exception name], [exception reason]); 
-		[connectionSocket abortSocket];
-	}
-	@finally {
-		connectionSocket = nil;
-		[self updateSocketStatus:connectionSocket];
-		NSLog(@"Disconnected from client %@\n", [remote hostname]);
-	}
+- (void)onSocket:(AsyncSocket *)sock didAcceptNewSocket:(AsyncSocket *)newSocket
+{
+	[connectedSockets addObject:newSocket];
 }
 
-- (void)updateSocketStatus:(ONTCPSocket *)socket {
+- (void)onSocket:(AsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port
+{
+	NSLog(@"Accepted client %@:%hu", host, port);
+	[self updateSocketStatusWithHost:host AndPort:port];
+	[sock readDataToLength:PROTOCOL_MSG_SIZE withTimeout:READ_TIMEOUT tag:0];
+}
+
+
+- (void)onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag
+{
+	// NSLog(@"Received data %@ with tag:%@ on socket %@", [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease], tag, sock);
+	[self process_commands:data];
+	[sock readDataToLength:PROTOCOL_MSG_SIZE withTimeout:READ_TIMEOUT tag:0];
+}
+
+- (void)onSocket:(AsyncSocket *)sock willDisconnectWithError:(NSError *)err
+{
+	NSLog(@"Client Disconnected: %@:%hu", [sock connectedHost], [sock connectedPort]);
+}
+
+- (void)onSocketDidDisconnect:(AsyncSocket *)sock
+{
+	[connectedSockets removeObject:sock];
+	[self updateSocketStatus:nil];
+}
+
+
+
+- (void)updateSocketStatus:(AsyncSocket *)socket {
 	if (socket == nil) {
-		if (serverSocket != nil) {
-			[status setStringValue:[NSString stringWithFormat:@"listening on %@.", [serverSocket localAddress]]];
+		if (listenSocket != nil) {
+			if ([listenSocket isConnected]) {
+				NSLog(@"listening on %@:%@.", [listenSocket localHost], [listenSocket localPort]);
+				[status setStringValue:[NSString stringWithFormat:@"listening on %@:%@.", [listenSocket localHost], [listenSocket localPort]]];
+			}
+			else {
+				NSLog(@"not listening yet");
+				[status setStringValue:@"not listening yet"];
+			}
 		}
 		else {
 			[status setStringValue:@"initialising"];
@@ -91,9 +113,15 @@
 
 	}
 	else {
-		[status setStringValue: [NSString stringWithFormat:@"connected to %@", [[socket remoteAddressHost] hostname]]];
+		[status setStringValue: [NSString stringWithFormat:@"connected to %@:%@", [socket connectedHost], [socket connectedPort]]];
 	}		
 }
+
+
+- (void)updateSocketStatusWithHost:(NSString *)host AndPort:(UInt16)port {
+	[status setStringValue:[NSString stringWithFormat:@"listening on %@:%d.", host, port]];
+}
+
 
 - (void)process_commands:(NSData *)command {
 	const unsigned char *bytes = [command bytes];
@@ -137,7 +165,6 @@
 	unsigned char checksum = 0;
 	while (count > 0) {
 		checksum += bytes[--count];
-		NSLog(@"bytes[--count]=%d, checksum=%d.", bytes[count], checksum);
 	}
 	return checksum;
 }
@@ -154,7 +181,8 @@
 	unsigned char bytes[7] = {0xff, 0x28, (unsigned char)button, 150, 0x00, 0x00, 0x00};
 	bytes[6] = [self checksum:bytes nr_of_bytes:6];
 	NSMutableData *clientData = [[NSMutableData alloc] initWithBytes:bytes length:7];
-	[stream writeData:clientData];
+	AsyncSocket *sock = [connectedSockets objectAtIndex:0];
+	[sock writeData:clientData withTimeout:-1 tag:BUTTON_PRESSED_TAG];
 	[clientData release];
 }
 
