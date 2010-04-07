@@ -8,7 +8,7 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 4DFE103B106E933200493CEF /* LEDsimulator */;
 		activeTarget = 8D1107260486CEB800E47090 /* LEDsimulator */;
 		addToTargets = (
@@ -130,43 +130,23 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 292169901;
-			PBXWorkspaceStateSaveDate = 292169901;
+			PBXPerProjectTemplateStateSaveDate = 292358589;
+			PBXWorkspaceStateSaveDate = 292358589;
 		};
 		perUserProjectItems = {
-			4D08A85311580C2C008F84C4 = 4D08A85311580C2C008F84C4 /* PBXTextBookmark */;
-			4D08A85411580C2C008F84C4 = 4D08A85411580C2C008F84C4 /* PBXTextBookmark */;
-			4D693A3B1073D2BC00FC79BD = 4D693A3B1073D2BC00FC79BD /* PBXTextBookmark */;
-			4D693B481073F64B00FC79BD = 4D693B481073F64B00FC79BD /* PBXTextBookmark */;
-			4D6A8A4C1169F6F7009208C8 = 4D6A8A4C1169F6F7009208C8 /* PBXTextBookmark */;
-			4D6A8A4D1169F6F7009208C8 = 4D6A8A4D1169F6F7009208C8 /* PBXTextBookmark */;
-			4D6A8A511169F6F7009208C8 = 4D6A8A511169F6F7009208C8 /* PBXTextBookmark */;
-			4D6A8A521169F6F7009208C8 = 4D6A8A521169F6F7009208C8 /* PBXTextBookmark */;
-			4D6A8A7E1169FAD4009208C8 = 4D6A8A7E1169FAD4009208C8 /* PBXTextBookmark */;
-			4D6A8A7F1169FAD4009208C8 = 4D6A8A7F1169FAD4009208C8 /* PBXTextBookmark */;
-			4D8EF65F116A28B400DF2C6D /* PBXTextBookmark */ = 4D8EF65F116A28B400DF2C6D /* PBXTextBookmark */;
-			4D8EF662116A28B400DF2C6D /* PBXTextBookmark */ = 4D8EF662116A28B400DF2C6D /* PBXTextBookmark */;
-			4D8EF674116A2A1400DF2C6D /* PBXTextBookmark */ = 4D8EF674116A2A1400DF2C6D /* PBXTextBookmark */;
-			4D8EF675116A2A1400DF2C6D /* PBXTextBookmark */ = 4D8EF675116A2A1400DF2C6D /* PBXTextBookmark */;
-			4D8EF67A116A2AD700DF2C6D /* XCBuildMessageTextBookmark */ = 4D8EF67A116A2AD700DF2C6D /* XCBuildMessageTextBookmark */;
-			4D8EF67B116A2AD700DF2C6D /* PBXTextBookmark */ = 4D8EF67B116A2AD700DF2C6D /* PBXTextBookmark */;
+			4D08A85311580C2C008F84C4 /* PBXTextBookmark */ = 4D08A85311580C2C008F84C4 /* PBXTextBookmark */;
+			4D08A85411580C2C008F84C4 /* PBXTextBookmark */ = 4D08A85411580C2C008F84C4 /* PBXTextBookmark */;
+			4D693A3B1073D2BC00FC79BD /* PBXTextBookmark */ = 4D693A3B1073D2BC00FC79BD /* PBXTextBookmark */;
+			4D693B481073F64B00FC79BD /* PBXTextBookmark */ = 4D693B481073F64B00FC79BD /* PBXTextBookmark */;
 			4D8EF680116A2B0300DF2C6D /* PBXTextBookmark */ = 4D8EF680116A2B0300DF2C6D /* PBXTextBookmark */;
-			4D8EF681116A2B0300DF2C6D /* PBXTextBookmark */ = 4D8EF681116A2B0300DF2C6D /* PBXTextBookmark */;
-			4D8EF682116A2B0300DF2C6D /* PBXTextBookmark */ = 4D8EF682116A2B0300DF2C6D /* PBXTextBookmark */;
-			4D8EF683116A2B0300DF2C6D /* PBXTextBookmark */ = 4D8EF683116A2B0300DF2C6D /* PBXTextBookmark */;
-			4D8EF685116A2C5F00DF2C6D /* PBXTextBookmark */ = 4D8EF685116A2C5F00DF2C6D /* PBXTextBookmark */;
-			4D8EF686116A2C7600DF2C6D /* PBXTextBookmark */ = 4D8EF686116A2C7600DF2C6D /* PBXTextBookmark */;
-			4D8EF687116A2C7600DF2C6D /* PBXTextBookmark */ = 4D8EF687116A2C7600DF2C6D /* PBXTextBookmark */;
-			4D8EF6A6116A5CA300DF2C6D /* PBXTextBookmark */ = 4D8EF6A6116A5CA300DF2C6D /* PBXTextBookmark */;
-			4D8EF6A7116A5CA600DF2C6D /* PBXTextBookmark */ = 4D8EF6A7116A5CA600DF2C6D /* PBXTextBookmark */;
-			4D8EF6B0116A5E2500DF2C6D /* PBXTextBookmark */ = 4D8EF6B0116A5E2500DF2C6D /* PBXTextBookmark */;
-			4D8EF6B3116A5EEB00DF2C6D /* PBXTextBookmark */ = 4D8EF6B3116A5EEB00DF2C6D /* PBXTextBookmark */;
 			4D8EF6B4116A5EEB00DF2C6D /* PBXTextBookmark */ = 4D8EF6B4116A5EEB00DF2C6D /* PBXTextBookmark */;
-			4D8EF6B5116A5EEB00DF2C6D /* PBXTextBookmark */ = 4D8EF6B5116A5EEB00DF2C6D /* PBXTextBookmark */;
-			4D8EF6B6116A5EEB00DF2C6D /* PBXTextBookmark */ = 4D8EF6B6116A5EEB00DF2C6D /* PBXTextBookmark */;
-			4DFE10791070A01C00493CEF = 4DFE10791070A01C00493CEF /* PBXTextBookmark */;
-			4DFE107A1070A01C00493CEF = 4DFE107A1070A01C00493CEF /* PBXTextBookmark */;
-			4DFE107B1070A01C00493CEF = 4DFE107B1070A01C00493CEF /* PBXTextBookmark */;
+			4DB31727116B2EDB000A38A2 /* PBXTextBookmark */ = 4DB31727116B2EDB000A38A2 /* PBXTextBookmark */;
+			4DB31728116B2EDB000A38A2 /* PBXTextBookmark */ = 4DB31728116B2EDB000A38A2 /* PBXTextBookmark */;
+			4DC48B84116D0A8900C97913 /* PBXTextBookmark */ = 4DC48B84116D0A8900C97913 /* PBXTextBookmark */;
+			4DC48B85116D0A8900C97913 /* PBXTextBookmark */ = 4DC48B85116D0A8900C97913 /* PBXTextBookmark */;
+			4DFE10791070A01C00493CEF /* PBXTextBookmark */ = 4DFE10791070A01C00493CEF /* PBXTextBookmark */;
+			4DFE107A1070A01C00493CEF /* PBXTextBookmark */ = 4DFE107A1070A01C00493CEF /* PBXTextBookmark */;
+			4DFE107B1070A01C00493CEF /* PBXTextBookmark */ = 4DFE107B1070A01C00493CEF /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4DFE1049106E933E00493CEF /* Source Control */;
 		userBuildSettings = {
@@ -247,123 +227,6 @@
 			sepNavVisRange = "{61246, 383}";
 		};
 	};
-	4D6A8A4C1169F6F7009208C8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1074106FE86500493CEF /* LEDsimulator.h */;
-		name = "LEDsimulator.h: 35";
-		rLen = 0;
-		rLoc = 738;
-		rType = 0;
-		vrLen = 1084;
-		vrLoc = 0;
-	};
-	4D6A8A4D1169F6F7009208C8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "'connectedSockets' undeclared (first use in this function)";
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		rLen = 1;
-		rLoc = 23;
-		rType = 1;
-	};
-	4D6A8A511169F6F7009208C8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1074106FE86500493CEF /* LEDsimulator.h */;
-		name = "LEDsimulator.h: 33";
-		rLen = 32;
-		rLoc = 686;
-		rType = 0;
-		vrLen = 1103;
-		vrLoc = 0;
-	};
-	4D6A8A521169F6F7009208C8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 23";
-		rLen = 0;
-		rLoc = 394;
-		rType = 0;
-		vrLen = 1430;
-		vrLoc = 0;
-	};
-	4D6A8A7E1169FAD4009208C8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 91";
-		rLen = 0;
-		rLoc = 2186;
-		rType = 0;
-		vrLen = 1432;
-		vrLoc = 2144;
-	};
-	4D6A8A7F1169FAD4009208C8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 91";
-		rLen = 0;
-		rLoc = 2244;
-		rType = 0;
-		vrLen = 1520;
-		vrLoc = 2413;
-	};
-	4D8EF65F116A28B400DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 91";
-		rLen = 0;
-		rLoc = 2186;
-		rType = 0;
-		vrLen = 1270;
-		vrLoc = 2144;
-	};
-	4D8EF662116A28B400DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 91";
-		rLen = 0;
-		rLoc = 2244;
-		rType = 0;
-		vrLen = 1396;
-		vrLoc = 2413;
-	};
-	4D8EF674116A2A1400DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 152";
-		rLen = 0;
-		rLoc = 3171;
-		rType = 0;
-		vrLen = 1282;
-		vrLoc = 3435;
-	};
-	4D8EF675116A2A1400DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 91";
-		rLen = 0;
-		rLoc = 2244;
-		rType = 0;
-		vrLen = 1429;
-		vrLoc = 2350;
-	};
-	4D8EF67A116A2AD700DF2C6D /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Passing argument 2 of 'updateSocketStatusWithHost:AndPort:' makes pointer from integer without a cast";
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 72;
-		rType = 1;
-	};
-	4D8EF67B116A2AD700DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 73";
-		rLen = 6;
-		rLoc = 1819;
-		rType = 0;
-		vrLen = 489;
-		vrLoc = 1769;
-	};
 	4D8EF680116A2B0300DF2C6D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 4DFE1074106FE86500493CEF /* LEDsimulator.h */;
@@ -374,106 +237,6 @@
 		vrLen = 1138;
 		vrLoc = 39;
 	};
-	4D8EF681116A2B0300DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 161";
-		rLen = 0;
-		rLoc = 3464;
-		rType = 0;
-		vrLen = 1454;
-		vrLoc = 4184;
-	};
-	4D8EF682116A2B0300DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 161";
-		rLen = 0;
-		rLoc = 3464;
-		rType = 0;
-		vrLen = 1449;
-		vrLoc = 4184;
-	};
-	4D8EF683116A2B0300DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 91";
-		rLen = 0;
-		rLoc = 2244;
-		rType = 0;
-		vrLen = 1429;
-		vrLoc = 2350;
-	};
-	4D8EF685116A2C5F00DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 73";
-		rLen = 6;
-		rLoc = 1819;
-		rType = 0;
-		vrLen = 449;
-		vrLoc = 2163;
-	};
-	4D8EF686116A2C7600DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 161";
-		rLen = 0;
-		rLoc = 3464;
-		rType = 0;
-		vrLen = 1415;
-		vrLoc = 2235;
-	};
-	4D8EF687116A2C7600DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 91";
-		rLen = 0;
-		rLoc = 2244;
-		rType = 0;
-		vrLen = 1480;
-		vrLoc = 2350;
-	};
-	4D8EF6A6116A5CA300DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 73";
-		rLen = 6;
-		rLoc = 1819;
-		rType = 0;
-		vrLen = 449;
-		vrLoc = 2163;
-	};
-	4D8EF6A7116A5CA600DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 73";
-		rLen = 6;
-		rLoc = 1819;
-		rType = 0;
-		vrLen = 449;
-		vrLoc = 2163;
-	};
-	4D8EF6B0116A5E2500DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 73";
-		rLen = 6;
-		rLoc = 1819;
-		rType = 0;
-		vrLen = 485;
-		vrLoc = 2233;
-	};
-	4D8EF6B3116A5EEB00DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 82";
-		rLen = 0;
-		rLoc = 2352;
-		rType = 0;
-		vrLen = 1498;
-		vrLoc = 1612;
-	};
 	4D8EF6B4116A5EEB00DF2C6D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 4DFE1074106FE86500493CEF /* LEDsimulator.h */;
@@ -483,26 +246,6 @@
 		rType = 0;
 		vrLen = 1206;
 		vrLoc = 0;
-	};
-	4D8EF6B5116A5EEB00DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 214";
-		rLen = 0;
-		rLoc = 5094;
-		rType = 0;
-		vrLen = 1504;
-		vrLoc = 5369;
-	};
-	4D8EF6B6116A5EEB00DF2C6D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
-		name = "LEDsimulator.m: 197";
-		rLen = 0;
-		rLoc = 5723;
-		rType = 0;
-		vrLen = 1178;
-		vrLoc = 4545;
 	};
 	4D9B94EB1072A5A600EEAF1A /* LEDsimulator.m:64 */ = {
 		isa = PBXFileBreakpoint;
@@ -521,6 +264,46 @@
 		modificationTime = 292156143.488974;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
+	};
+	4DB31727116B2EDB000A38A2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
+		name = "LEDsimulator.m: 82";
+		rLen = 0;
+		rLoc = 2352;
+		rType = 0;
+		vrLen = 1502;
+		vrLoc = 1612;
+	};
+	4DB31728116B2EDB000A38A2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
+		name = "LEDsimulator.m: 197";
+		rLen = 0;
+		rLoc = 5723;
+		rType = 0;
+		vrLen = 1449;
+		vrLoc = 4274;
+	};
+	4DC48B84116D0A8900C97913 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
+		name = "LEDsimulator.m: 82";
+		rLen = 0;
+		rLoc = 2352;
+		rType = 0;
+		vrLen = 1502;
+		vrLoc = 1612;
+	};
+	4DC48B85116D0A8900C97913 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4DFE1075106FE86500493CEF /* LEDsimulator.m */;
+		name = "LEDsimulator.m: 197";
+		rLen = 0;
+		rLoc = 5723;
+		rType = 0;
+		vrLen = 1453;
+		vrLoc = 4270;
 	};
 	4DF7F2BA109626BA00491D98 /* StripeView.h */ = {
 		uiCtxt = {
@@ -607,9 +390,9 @@
 	};
 	4DFE1075106FE86500493CEF /* LEDsimulator.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1331, 2496}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1331, 2457}}";
 			sepNavSelRange = "{5723, 0}";
-			sepNavVisRange = "{4545, 1178}";
+			sepNavVisRange = "{4270, 1453}";
 			sepNavWindowFrame = "{{15, 92}, {1390, 786}}";
 		};
 	};

@@ -3,13 +3,11 @@ pong/ebin/*.beam
 pong/logs/*
 
 build
-*.xcodeproj
 
 .DS_Store
 *.swp
 *~.nib
 
-*.pbxuser
 *.perspective
 *.perspectivev3
 

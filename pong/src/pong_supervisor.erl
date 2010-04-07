@@ -58,12 +58,6 @@ start() ->
 %%          {error, Reason}
 %% --------------------------------------------------------------------
 init([]) ->
-	LEDserver = {tag1,
-			{led_server, start_link, [5000]},
-			permanent,
-			10000,
-			worker,
-			[led_server]},
 	MediaServer = {tag5,
 			{media_server, start_link, [[5001, {"127.0.0.1", 55555}]]},
 			permanent,

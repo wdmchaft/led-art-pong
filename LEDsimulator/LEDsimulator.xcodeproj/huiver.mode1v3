@@ -216,11 +216,11 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4D8EF6B6116A5EEB00DF2C6D</string>
+						<string>4DC48B85116D0A8900C97913</string>
 						<key>history</key>
 						<array>
 							<string>4D8EF6B4116A5EEB00DF2C6D</string>
-							<string>4D8EF6B5116A5EEB00DF2C6D</string>
+							<string>4DB31728116B2EDB000A38A2</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -379,7 +379,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4D8EF6B3116A5EEB00DF2C6D</string>
+										<string>4DC48B84116D0A8900C97913</string>
 										<key>history</key>
 										<array>
 											<string>4DFE10791070A01C00493CEF</string>
@@ -390,7 +390,7 @@
 											<string>4D08A85311580C2C008F84C4</string>
 											<string>4D08A85411580C2C008F84C4</string>
 											<string>4D8EF680116A2B0300DF2C6D</string>
-											<string>4D8EF681116A2B0300DF2C6D</string>
+											<string>4DB31727116B2EDB000A38A2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -402,14 +402,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1171, 637}}</string>
+								<string>{{0, 0}, {1171, 634}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 147 1440 731 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>637pt</string>
+							<string>634pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -422,14 +422,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 642}, {1171, 48}}</string>
+								<string>{{0, 639}, {1171, 51}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 147 1440 731 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>48pt</string>
+							<string>51pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -448,9 +448,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4D8EF660116A28B400DF2C6D</string>
+				<string>4DC48B7E116D09C000C97913</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>4D8EF661116A28B400DF2C6D</string>
+				<string>4DC48B7F116D09C000C97913</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -586,13 +586,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4D8EF6B7116A5EEB00DF2C6D</string>
-		<string>4D8EF66C116A28B400DF2C6D</string>
-		<string>4D8EF66D116A28B400DF2C6D</string>
-		<string>4DFE10861070A01C00493CEF</string>
+		<string>4DC48B8D116D0A8900C97913</string>
+		<string>4DC48B8E116D0A8900C97913</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/huiver/XCode/LED-Art-pong/LEDsimulator/LEDsimulator.xcodeproj</string>
+		<string>4DFE10861070A01C00493CEF</string>
 		<string>4D6A8A4F1169F6F7009208C8</string>
+		<string>/Users/huiver/XCode/LED-Art-pong/LEDsimulator/LEDsimulator.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
@@ -612,14 +611,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LEDsimulator.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -675,7 +672,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>4DFE10861070A01C00493CEF</string>
-				<string>4D8EF663116A28B400DF2C6D</string>
+				<string>4DC48B81116D09C000C97913</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -795,13 +792,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>4D8EF664116A28B400DF2C6D</string>
+				<string>4DC48B86116D0A8900C97913</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>4D8EF665116A28B400DF2C6D</string>
-				<string>4D8EF666116A28B400DF2C6D</string>
-				<string>4D8EF667116A28B400DF2C6D</string>
-				<string>4D8EF668116A28B400DF2C6D</string>
-				<string>4D8EF669116A28B400DF2C6D</string>
+				<string>4DC48B87116D0A8900C97913</string>
+				<string>4DC48B88116D0A8900C97913</string>
+				<string>4DC48B89116D0A8900C97913</string>
+				<string>4DC48B8A116D0A8900C97913</string>
+				<string>4DC48B8B116D0A8900C97913</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -965,7 +962,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>4D8EF66A116A28B400DF2C6D</string>
+				<string>4DC48B8C116D0A8900C97913</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
